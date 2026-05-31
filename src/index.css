@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean: #0F4C81;
+  --color-ocean-light: #1866AA;
+  --color-ocean-dark: #0A3256;
+  --color-seagreen: #2E8B57;
+  --color-seagreen-light: #3CA36A;
+  --color-sand: #DDB892;
+  --color-sand-light: #E9D2BA;
+  --color-sand-dark: #C6996D;
+  --color-slate-bg: #F8FAFC;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Poppins", system-ui, sans-serif;
+  --shadow-glass: 0 8px 32px 0 rgba(15, 76, 129, 0.08);
+}
+
+/* Custom Glassmorphism styles */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(15, 76, 129, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 76, 129, 0.15);
+}
+
+.wave-bg {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(46, 139, 87, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(15, 76, 129, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(221, 184, 146, 0.1) 0px, transparent 50%);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Map fix for Leaflet container size */
+.leaflet-container {
+  font-family: inherit;
+}
